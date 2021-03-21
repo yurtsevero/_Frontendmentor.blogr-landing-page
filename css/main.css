@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  height: 600px;
+  background-image: url(/images/bg-pattern-intro.svg), linear-gradient(135deg, #ff8f71, #ff3e55);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 300%, 100%;
+  background-position: center, center;
+  border-radius: 0px 0px 0px 100px;
+  padding: 56px 24px 0px 24px;
+  color: white;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+}
+
+.header__logo {
+  cursor: pointer;
+}
+
+.header__hamburger-menu {
+  cursor: pointer;
+}
+
+.header__titel {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-top: 108px;
+  text-align: center;
+}
+
+.header__desc {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header__btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+  padding: 0px 18px;
+}
+
+.header__button {
+  height: 48px;
+  width: 137px;
+  border-radius: 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header__button-start {
+  color: #ff525d;
+  border: none;
+}
+
+.header__button-learn {
+  color: white;
+  border: 1px solid white;
+  background: none;
+}
+
+.header__button-signup {
+  background-image: linear-gradient(135deg, #ff8f71, #ff3e55);
+  color: white;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 125px;
+  width: 324px;
+  height: 511px;
+  padding: 24px 24px 32px 24px;
+  background: white;
+  border-radius: 5px;
+}
+
+.nav-menu__litem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu__link {
+  color: #1f3f5b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.75rem;
+}
+
+.nav-menu__sublist {
+  width: 276px;
+  height: 150px;
+  background-color: rgba(45, 46, 64, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 0px;
+}
+
+.nav-menu__sublink {
+  color: #1f3f5b;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.nav-menu__line {
+  width: 100%;
+  border: 1px solid rgba(45, 46, 64, 0.1);
+  margin: 24px 0px 12px 0px;
+}
+
+.nav-menu--show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  width: 375px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
