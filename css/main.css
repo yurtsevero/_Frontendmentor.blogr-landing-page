@@ -157,9 +157,36 @@ button {
   align-items: center;
 }
 
+.section1 {
+  height: 1086px;
+  padding: 100px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section1__title {
+  line-height: 2rem;
+  padding: 0px 32px;
+}
+
+.section1__image {
+  margin: 38px 0px 46px 0px;
+}
+
+.section1__desc {
+  padding: 0px 12px;
+  margin: 32px 0px 40px 0px;
+  letter-spacing: 0.5px;
+  line-height: 1.75em;
+  color: #4c5862;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   width: 375px;
+  height: 100vh;
   margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+.section1 {
+  height: 1086px;
+  padding: 100px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__title {
+    line-height: 2rem;
+    padding: 0px 32px;
+  }
+  &__image {
+    margin: 38px 0px 46px 0px;
+  }
+  &__desc {
+    padding: 0px 12px;
+    margin: 32px 0px 40px 0px;
+    letter-spacing: 0.5px;
+    line-height: 1.75em;
+    color: #4c5862;
+  }
+}
