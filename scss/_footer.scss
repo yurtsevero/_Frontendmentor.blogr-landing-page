@@ -1,0 +1,28 @@
+.footer {
+  background-color: $Very-dark-black;
+  @include displayFlex(column, center, center);
+  color: $White;
+  text-align: center;
+  padding: 70px 0px;
+  border-radius: 0px 100px 0px 0px;
+  &__section:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  &__logo {
+    margin-bottom: 2.5rem;
+  }
+  &__sub-title {
+    margin-bottom: 0.5rem;
+  }
+  &__list {
+    width: 200px;
+  }
+  &__litem {
+    padding: 0.5rem;
+  }
+
+  &__link {
+    opacity: 0.4;
+  }
+}

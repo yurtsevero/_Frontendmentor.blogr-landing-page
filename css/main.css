@@ -21,10 +21,18 @@ li {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: white;
 }
 
 button {
   cursor: pointer;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  width: 375px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .header {
@@ -157,18 +165,21 @@ button {
   align-items: center;
 }
 
-.section1 {
-  height: 1086px;
-  padding: 100px 24px;
+section {
+  margin: 100px 0px;
+  padding: 0px 24px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .section1__title {
+  font-size: 1.75rem;
   line-height: 2rem;
-  padding: 0px 32px;
+  padding: 0 1rem;
+  color: #1f3f5b;
 }
 
 .section1__image {
@@ -183,10 +194,92 @@ button {
   color: #4c5862;
 }
 
-body {
-  font-family: "Overpass", sans-serif;
-  width: 375px;
-  height: 100vh;
-  margin: 0 auto;
+.section2 {
+  justify-content: flex-end;
+  padding-bottom: 100px;
+  height: 625px;
+  background-image: url(/images/bg-pattern-circles.svg), linear-gradient(#2d2e40, #3f4164);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: center -250px, 0% 0%;
+  border-radius: 0 100px 0 100px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.section2__image {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+}
+
+.section2__title {
+  font-size: 2.5rem;
+}
+
+.section2__desc {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.75rem;
+  padding: 24px 0px;
+}
+
+.section3 {
+  position: relative;
+  top: 80px;
+}
+
+.section3__title {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  color: #1f3f5b;
+}
+
+.section3__desc {
+  padding: 0px 16px;
+  margin: 32px 0px 40px 0px;
+  letter-spacing: 0.5px;
+  line-height: 1.75em;
+  color: #4c5862;
+}
+
+.footer {
+  background-color: #25252d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 70px 0px;
+  border-radius: 0px 100px 0px 0px;
+}
+
+.footer__section:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.footer__logo {
+  margin-bottom: 2.5rem;
+}
+
+.footer__sub-title {
+  margin-bottom: 0.5rem;
+}
+
+.footer__list {
+  width: 200px;
+}
+
+.footer__litem {
+  padding: 0.5rem;
+}
+
+.footer__link {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=main.css.map */
