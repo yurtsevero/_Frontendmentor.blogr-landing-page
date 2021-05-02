@@ -76,10 +76,15 @@
   position: absolute;
   top: 125px;
   width: 324px;
-  height: 511px;
   padding: 24px 24px 32px 24px;
   background: $White;
   border-radius: 5px;
+  &__btn-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   &__litem {
     display: flex;
     justify-content: center;
@@ -91,22 +96,32 @@
     font-weight: $semi-bold;
     padding: 0.75rem;
   }
+  &__icon {
+    cursor: pointer;
+  }
   &__sublist {
+    display: none;
     width: 276px;
-    height: 150px;
     background-color: $grey;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     padding: 18px 0px;
   }
+  &__sublitem {
+    width: 100%;
+  }
   &__sublink {
+    text-align: center;
+    display: inline-block;
+    width: inherit;
     color: $very-dark-blue;
     font-size: 1rem;
     font-weight: $semi-bold;
-    padding: 1rem;
+    padding: 0.5rem;
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: $White;
+    }
   }
   &__line {
     width: 100%;

@@ -115,10 +115,16 @@ body {
   position: absolute;
   top: 125px;
   width: 324px;
-  height: 511px;
   padding: 24px 24px 32px 24px;
   background: white;
   border-radius: 5px;
+}
+
+.nav-menu__btn-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-menu__litem {
@@ -134,23 +140,36 @@ body {
   padding: 0.75rem;
 }
 
+.nav-menu__icon {
+  cursor: pointer;
+}
+
 .nav-menu__sublist {
+  display: none;
   width: 276px;
-  height: 150px;
   background-color: rgba(45, 46, 64, 0.1);
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   padding: 18px 0px;
 }
 
+.nav-menu__sublitem {
+  width: 100%;
+}
+
 .nav-menu__sublink {
+  text-align: center;
+  display: inline-block;
+  width: inherit;
   color: #1f3f5b;
   font-size: 1rem;
   font-weight: 600;
-  padding: 1rem;
+  padding: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.nav-menu__sublink:hover {
+  background-color: white;
 }
 
 .nav-menu__line {
@@ -259,6 +278,10 @@ section {
   border-radius: 0px 100px 0px 0px;
 }
 
+.footer__section {
+  width: 100%;
+}
+
 .footer__section:not(:last-child) {
   margin-bottom: 2.5rem;
 }
@@ -268,18 +291,74 @@ section {
 }
 
 .footer__sub-title {
-  margin-bottom: 0.5rem;
-}
-
-.footer__list {
-  width: 200px;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
 
 .footer__litem {
-  padding: 0.5rem;
+  opacity: 0.4;
+  width: 100%;
 }
 
 .footer__link {
-  opacity: 0.4;
+  display: inline-block;
+  width: inherit;
+  padding: 0.7rem;
+}
+
+.footer__link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100vw;
+  }
+  .header {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .header__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .header__hamburger-menu {
+    display: none;
+  }
+  .header__button-signup {
+    background: white;
+    color: #ff525d;
+    margin: 0;
+  }
+  .nav-menu {
+    position: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 2rem;
+    background: none;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-menu__btn-Container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-menu__line {
+    display: none;
+  }
+  .nav-menu__link {
+    color: white;
+  }
+  .nav-menu__icon {
+    content: url(../images/icon-arrow-light.svg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

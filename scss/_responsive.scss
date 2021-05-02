@@ -1,2 +1,56 @@
 @include media-lg {
+  body {
+    width: 100vw;
+  }
+
+  .header {
+    // position: relative;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    &__container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    &__hamburger-menu {
+      display: none;
+    }
+    &__button-signup {
+      background: $White;
+      color: $light-red;
+      margin: 0;
+    }
+  }
+
+  .nav-menu {
+    position: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 2rem;
+    background: none;
+    width: 100%;
+    height: 100%;
+
+    &__btn-Container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__line {
+      display: none;
+    }
+
+    &__link {
+      color: $White;
+    }
+    &__icon {
+      content: url(../images/icon-arrow-light.svg);
+    }
+  }
 }
