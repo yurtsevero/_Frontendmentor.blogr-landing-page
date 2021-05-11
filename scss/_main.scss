@@ -1,7 +1,7 @@
 body {
   font-family: "Overpass", sans-serif;
   width: 375px;
-
-  height: 100vh;
+  height: 100%;
+  position: relative;
   @include centerContainer();
 }

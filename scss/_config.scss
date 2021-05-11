@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-//create a mixin for most use css attributes and use it with @include displayFlex(args) i.E
+//create a mixin for most used css attributes and use it with @include displayFlex(args) i.E
 @mixin displayFlex($fdirection, $jcontent, $aitems) {
   display: flex;
   flex-direction: $fdirection;
