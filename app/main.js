@@ -36,9 +36,9 @@ const toggleNav = function () {
   if (getWindowWidth() < 1024) {
     navMenu.classList.toggle("nav-menu--show");
     if (navMenu.classList.contains("nav-menu--show")) {
-      hamburgerIcon.src = "/images/icon-close.svg";
+      hamburgerIcon.src = "images/icon-close.svg";
     } else {
-      hamburgerIcon.src = "/images/icon-hamburger.svg";
+      hamburgerIcon.src = "images/icon-hamburger.svg";
     }
   }
   closeSubLists();
@@ -75,7 +75,7 @@ navLitems.forEach((item) => {
     if (subListShown) subListClass.remove("nav-menu--show");
     else {
       closeSubLists();
-      
+
       subListClass.add("nav-menu--show");
     }
   });
